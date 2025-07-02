@@ -133,7 +133,7 @@ body {
 }
 
 .button-input:hover {
-  background-color:#6c8cff;;
+  background-color:#6c8cff;
 }
 
 .inputs {
@@ -143,3 +143,32 @@ body {
     height: 40px;
 }
 
+.widget-color {
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.widget-p {
+font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  border-radius: 8px;
+  border-width: 0;
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+    background: #4e75ff;
+    color: #fff;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
+}
