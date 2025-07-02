@@ -27,9 +27,10 @@ const images = [
 
 const ul = document.createElement("ul");
 
+ul.style.width = "1128px";
 ul.style.display = "flex";
 ul.style.flexWrap = "wrap";
-ul.style.gap = "20px";
+ul.style.justifyContent = "space-between";
 
 images.forEach((image) => {
   const li = document.createElement("li");
@@ -37,7 +38,7 @@ images.forEach((image) => {
 
   img.src = image.url;
   img.alt = image.alt;
-  img.style.width = "600px";
+  img.style.width = "300px";
 
   li.appendChild(img);
   ul.appendChild(li);
