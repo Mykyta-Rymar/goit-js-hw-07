@@ -30,9 +30,11 @@ const ul = document.querySelector(".gallery");
 ul.style.width = "1128px";
 ul.style.display = "flex";
 ul.style.flexWrap = "wrap";
-ul.style.justifyContent = "space-between";
+ul.style.justifyContent = "center";
+ul.style.gap = "8px";
+ul.style.alignItems = "center";
 
-images.forEach((image) => {
+const items = images.map((image) => {
   const li = document.createElement("li");
   const img = document.createElement("img");
 
@@ -40,8 +42,8 @@ images.forEach((image) => {
   img.alt = image.alt;
   img.style.width = "300px";
 
-  li.appendChild(img);
-  ul.appendChild(li);
+  li.append(img);
+  return li;
 });
 
-document.body.appendChild(ul);
+ul.append(...items);
