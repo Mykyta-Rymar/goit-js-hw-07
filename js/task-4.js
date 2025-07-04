@@ -8,22 +8,21 @@ form.addEventListener("submit", onFormSubmit);
 function onFormSubmit(event) {
   event.preventDefault();
 
-  const email = event.target.elements.email;
-  const password = event.target.elements.password;
+  const emailA = event.target.elements.email;
+  const passwordA = event.target.elements.password;
 
-  const emailValue = email.value.trim();
-  const passwordValue = password.value.trim();
+  const emailValue = emailA.value.trim();
+  const passwordValue = passwordA.value.trim();
 
   if (emailValue === "" || passwordValue === "") {
     alert("All form fields must be filled in");
-    form.reset();
     return;
   } else {
+    form.reset();
     const data = {
-      emailA: emailValue,
-      passwordA: passwordValue,
+      email: emailValue,
+      password: passwordValue,
     };
     console.log(data);
   }
-  form.reset();
 }

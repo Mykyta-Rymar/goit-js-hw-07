@@ -25,7 +25,7 @@ const images = [
   },
 ];
 
-const ul = document.createElement("ul");
+const ul = document.querySelector(".gallery");
 
 ul.style.width = "1128px";
 ul.style.display = "flex";
